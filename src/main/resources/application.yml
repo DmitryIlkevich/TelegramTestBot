@@ -1,0 +1,19 @@
+spring:
+  profiles: default
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://localhost:5432/guide_town_db
+    username: {datasource.username}
+    password: {datasource.password}
+
+server:
+  port: 8080
+  servlet:
+    context-path: /guide
+
+---
+
+spring:
+  profiles: test
